@@ -54,14 +54,14 @@ public class Cpu extends Ware {
     @Override
     public String toString() {
         return "Cpu {" +
-                "frequencyMHz=" + this.getFrequencyMHz() +
-                ", coreQuantity=" + this.getCoreQuantity() +
-                ", techProcessNm=" + this.getTechProcessNm() +
-                ", socket=" + this.getSocket() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "frequencyMHz=" + getFrequencyMHz() +
+                ", coreQuantity=" + getCoreQuantity() +
+                ", techProcessNm=" + getTechProcessNm() +
+                ", socket=" + getSocket() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

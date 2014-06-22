@@ -35,13 +35,13 @@ public class Hdd extends Ware {
     @Override
     public String toString() {
         return "Hdd {" +
-                "capacityGb=" + this.getCapacityGb() +
-                ", rotatingSpeedRpm=" + this.getRotatingSpeedRpm() +
-                ", formfactorHdd=" + this.getFormfactorHdd() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "capacityGb=" + getCapacityGb() +
+                ", rotatingSpeedRpm=" + getRotatingSpeedRpm() +
+                ", formfactorHdd=" + getFormfactorHdd() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

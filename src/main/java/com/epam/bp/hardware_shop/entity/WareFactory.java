@@ -20,9 +20,6 @@ public class WareFactory {
     }
 
     public static Ware createRandomWare() {
-        //   int x = minMaxRandom(0, (Ware.class.getClasses().length)-2);
-        // Ware.getClasses() method returns array with enum Vendor only.
-        // What about subclasses?
         int x = minMaxRandom(0, WARES_SUBCLASSES_COUNT - 1);
         switch (x) {
             case 0: {

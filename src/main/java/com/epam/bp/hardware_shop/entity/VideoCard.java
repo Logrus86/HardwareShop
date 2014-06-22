@@ -55,15 +55,15 @@ public class VideoCard extends Ware {
     @Override
     public String toString() {
         return "VideoCard {" +
-                "ramSizeMb=" + this.getRamSizeMb() +
-                ", ramFrequencyMHz=" + this.getRamFrequencyMHz() +
-                ", cpuFrequencyMHz=" + this.getCpuFrequencyMHz() +
-                ", busWidthBit=" + this.getBusWidthBit() +
-                ", videoCardChipset=" + this.getVideoCardChipset() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "ramSizeMb=" + getRamSizeMb() +
+                ", ramFrequencyMHz=" + getRamFrequencyMHz() +
+                ", cpuFrequencyMHz=" + getCpuFrequencyMHz() +
+                ", busWidthBit=" + getBusWidthBit() +
+                ", videoCardChipset=" + getVideoCardChipset() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

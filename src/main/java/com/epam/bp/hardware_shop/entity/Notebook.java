@@ -65,16 +65,16 @@ public class Notebook extends Ware {
     @Override
     public String toString() {
         return "Notebook {" +
-                "displaySizeInches=" + this.getDisplaySizeInches() +
-                ", displayResolution=" + this.getDisplayResolution() +
-                ", " + this.getCpu() +
-                ", " + this.getVideoCard() +
-                ", " + this.getHdd() +
-                ", " + this.getRam() +
-                ", " + this.getVendor() +
-                ", model=" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "displaySizeInches=" + getDisplaySizeInches() +
+                ", displayResolution=" + getDisplayResolution() +
+                ", " + getCpu() +
+                ", " + getVideoCard() +
+                ", " + getHdd() +
+                ", " + getRam() +
+                ", " + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 }

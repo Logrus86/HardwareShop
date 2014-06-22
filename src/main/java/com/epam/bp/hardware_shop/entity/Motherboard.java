@@ -85,18 +85,18 @@ public class Motherboard extends Ware {
     @Override
     public String toString() {
         return "Motherboard {" +
-                "socket=" + this.getSocket() +
-                ", vgaOnboard=" + this.isVgaOnboard() +
-                ", raidOnboard=" + this.isRaidOnboard() +
-                ", formFactor=" + this.getFormFactor() +
-                ", sataCount=" + this.getSataCount() +
-                ", usbCount=" + this.getUsbCount() +
-                ", ddrCount=" + this.getDdrCount() +
-                ", maxRamSizeGb=" + this.getMaxRamSizeGb() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "socket=" + getSocket() +
+                ", vgaOnboard=" + isVgaOnboard() +
+                ", raidOnboard=" + isRaidOnboard() +
+                ", formFactor=" + getFormFactor() +
+                ", sataCount=" + getSataCount() +
+                ", usbCount=" + getUsbCount() +
+                ", ddrCount=" + getDdrCount() +
+                ", maxRamSizeGb=" + getMaxRamSizeGb() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

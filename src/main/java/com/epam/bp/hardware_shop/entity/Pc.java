@@ -96,18 +96,18 @@ public class Pc extends Ware {
     public String toString() {
         return "Pc {" +
                 this.getCpu() +
-                ", " + this.getVideoCard() +
-                ", " + this.getHdd() +
-                ", " + this.getRam() +
-                ", " + this.getMotherboard() +
-                ", " + this.getMonitor() +
-                ", mouseAndKeyboardIncluded=" + this.isMouseAndKeyboardIncluded() +
-                ", speakersIncluded=" + this.isSpeakersIncluded() +
-                ", preinstalledOs=" + this.getPreinstalledOs() +
-                ", vendor=" + this.getVendor() +
-                ", model=" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                ", " + getVideoCard() +
+                ", " + getHdd() +
+                ", " + getRam() +
+                ", " + getMotherboard() +
+                ", " + getMonitor() +
+                ", mouseAndKeyboardIncluded=" + isMouseAndKeyboardIncluded() +
+                ", speakersIncluded=" + isSpeakersIncluded() +
+                ", preinstalledOs=" + getPreinstalledOs() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

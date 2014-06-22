@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HwShop {
-    public List<Ware> wares = new ArrayList<Ware>();
+public class HwShop implements Cloneable {
+    public List<Ware> wares = new ArrayList<>();
     private String title;
     private String address;
     private int waresAmount;
@@ -49,24 +49,38 @@ public class HwShop {
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append("Hardware shop named '");
-        result.append(this.getTitle());
-        result.append("' with address: '");
-        result.append(this.getAddress());
-        result.append("'.\nWares amount at store: ");
-        result.append(this.getWaresAmount());
-        result.append(".\nTotal wares cost: ");
-        result.append(this.getTotalWaresCost());
-        result.append(".\n\nFull wares list:\n");
+        StringBuilder result = new StringBuilder()
+                .append("Hardware shop named '")
+                .append(getTitle())
+                .append("' with address: '")
+                .append(getAddress())
+                .append("'.\nWares amount at store: ")
+                .append(getWaresAmount())
+                .append(".\nTotal wares cost: ")
+                .append(getTotalWaresCost())
+                .append(".\nFull wares list:\n");
         int i = 0;
         for (Ware ware : wares) {
-            result.append((i + 1));
-            result.append(". ");
-            result.append(ware);
-            result.append("\n");
+            result.append((i + 1))
+                    .append(". ")
+                    .append(ware)
+                    .append("\n");
             i++;
         }
         return result.toString();
     }
+
+    @Override
+    public HwShop clone() {
+        try {
+            HwShop clone = (HwShop) super.clone();
+            List<Ware> cloneWares = new ArrayList<>();
+            for (Ware ware : this.wares) cloneWares.add(ware.clone());
+            clone.wares = cloneWares;
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }
+

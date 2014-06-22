@@ -35,13 +35,13 @@ public class Ram extends Ware {
     @Override
     public String toString() {
         return "Ram {" +
-                "capacityMb=" + this.getCapacityMb() +
-                ", maxFrequencyMHz=" + this.getMaxFrequencyMHz() +
-                ", ramtype=" + this.getRamtype() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "capacityMb=" + getCapacityMb() +
+                ", maxFrequencyMHz=" + getMaxFrequencyMHz() +
+                ", ramtype=" + getRamtype() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 

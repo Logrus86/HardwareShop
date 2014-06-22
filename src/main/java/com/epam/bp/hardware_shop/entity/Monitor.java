@@ -65,16 +65,16 @@ public class Monitor extends Ware {
     @Override
     public String toString() {
         return "Monitor {" +
-                "displaySizeInches=" + this.getDisplaySizeInches() +
-                ", displayResolution=" + this.getDisplayResolution() +
-                ", vgaOut=" + this.isVgaOut() +
-                ", dviOut=" + this.isDviOut() +
-                ", hdmiOut=" + this.isHdmiOut() +
-                ", speakersBuiltin=" + this.isSpeakersBuiltin() +
-                ", vendor=" + this.getVendor() +
-                ", model='" + this.getModel() +
-                ", weight=" + this.getWeight() +
-                ", price=" + this.getPrice() +
+                "displaySizeInches=" + getDisplaySizeInches() +
+                ", displayResolution=" + getDisplayResolution() +
+                ", vgaOut=" + isVgaOut() +
+                ", dviOut=" + isDviOut() +
+                ", hdmiOut=" + isHdmiOut() +
+                ", speakersBuiltin=" + isSpeakersBuiltin() +
+                ", vendor=" + getVendor() +
+                ", model=" + getModel() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
                 '}';
     }
 
