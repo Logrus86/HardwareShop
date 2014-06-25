@@ -8,9 +8,6 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class HwShopUtil {
-    private static boolean PRICESELECTED(BigDecimal warePrice, BigDecimal lowPrice, BigDecimal highPrice) {
-        return !((warePrice.compareTo(lowPrice) < 0) | (warePrice.compareTo(highPrice) > 0));
-    }
 
     public static HwShop SortByPrice(HwShop hwShop, Comparator<Ware> comparator) {
         HwShop result = hwShop.clone();

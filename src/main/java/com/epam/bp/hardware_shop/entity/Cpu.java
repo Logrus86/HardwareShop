@@ -7,14 +7,6 @@ public class Cpu extends Ware {
     private int techProcessNm;
     private Socket socket;
 
-    /*public Cpu (Cpu builder) {
-        frequencyMHz = builder.frequencyMHz;
-        coreQuantity = builder.coreQuantity;
-        techProcessNm = builder.techProcessNm;
-        socket = builder.socket;
-        setWeight(builder.getWeight());
-    }*/
-
     public Socket getSocket() {
         return socket;
     }
